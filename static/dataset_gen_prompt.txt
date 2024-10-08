@@ -1,0 +1,72 @@
+Create a highly useful and realistic dataset.
+Make it as realistic as possible using real-world scenarios.
+
+The dataset is about commands entered into a system.
+There are two teams, legitimate users who do their tasks, and ethical hackers.
+
+Ethical hackers do not follow the tasks but instead try to exploit the system.
+Be creative about how the ethical hackers would approach breaking the system.
+The ethical hackers are allowed to use any attack.
+Use the following types of attacks:
+
+1. **Phishing**: Social engineering attack that attempts to trick users into revealing sensitive information.
+2. **Ransomware**: Malware that encrypts files and demands payment in exchange for the decryption key.
+3. **SQL Injection**: Attack that injects malicious SQL code to access or manipulate sensitive data.
+4. **Cross-Site Scripting (XSS)**: Attack that injects malicious JavaScript code into a website to steal user data.
+5. **Denial of Service (DoS)**: Attack that floods a system with traffic to make it unavailable.
+6. **Distributed Denial of Service (DDoS)**: Large-scale DoS attack that uses multiple systems to flood a target.
+7. **Man-in-the-Middle (MitM)**: Attack that intercepts communication between two parties to steal sensitive information.
+8. **Malware**: Software designed to harm or exploit a system.
+9. **Trojan**: Malware that disguises itself as legitimate software to gain unauthorized access.
+10. ** Rootkit**: Malware that hides malware or unauthorized access from system administrators.
+11. **Keylogger**: Malware that records keystrokes to steal sensitive information.
+12. **Adware**: Malware that displays unwanted advertisements.
+13. **Spyware**: Malware that steals sensitive information without the user's knowledge.
+14. **Worm**: Malware that replicates itself to infect other systems.
+15. **Botnet**: Network of infected systems that can be controlled remotely.
+16. **Drive-by Download**: Attack that downloads malware onto a system without the user's knowledge.
+17. **Watering Hole Attack**: Attack that compromises a website frequently visited by people in a specific industry.
+18. **Spear Phishing**: Targeted phishing attack that uses personalized information to trick a specific individual.
+19. **Whaling**: Phishing attack that targets high-level executives or officials.
+20. **Business Email Compromise (BEC)**: Attack that targets businesses by impersonating executives or suppliers.
+21. **Zero-Day Exploit**: Attack that takes advantage of a previously unknown vulnerability.
+22. **File Inclusion Vulnerability**: Attack that allows an attacker to include malicious files on a server.
+23. **Cross-Site Request Forgery (CSRF)**: Attack that tricks a user into performing unintended actions on a website.
+24. **Session Hijacking**: Attack that steals a user's session ID to gain unauthorized access.
+25. **Clickjacking**: Attack that tricks a user into clicking on a hidden button or link.
+26. **Typosquatting**: Attack that targets users who misspell a URL to redirect them to a malicious website.
+27. **Eavesdropping**: Attack that intercepts communication between two parties to steal sensitive information.
+28. **Malicious Redirect**: Attack that redirects users to a malicious website.
+29. **Botnet-based Credential Stuffing**: Attack that uses a botnet to try stolen login credentials on multiple websites.
+30. **Lateral Movement**: Attack that moves laterally within a network to gain access to sensitive systems or data.
+
+The hackers should never be related to the task!
+The hacker commands should be independent of each other and not related!
+
+The legitimate users on the other hand should only run commands that are related to their current task.
+
+Do not use comments in the JSON!
+
+The commands must be valid BASH commands!
+
+This might not solve the task but is a step towards accomplishing it.
+
+The dataset should contain AT LEAST 100 ENTRIES in the format:
+[
+{
+  "input": {
+    "role": "this is the role of the user in the organization like senior linux administrator",
+    "task": "this is the currently assigned task for the user. Imagine a real world task that would be given to the user based on his/her role.",
+    "user": "this is the name of the user, make up one with lowercase and an underscore separating the names like john_smith",
+  },
+  "output": {
+    "ethical_hackers": [
+      "this is the array of commands the attackers used"
+    ],
+    "legitimate_users": [
+      "this is the array of commands the legitimate users used to accomplish the task"
+    ]
+  }
+},
+...
+]

